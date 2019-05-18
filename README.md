@@ -9,7 +9,7 @@ Checkout the repository in a folder of your Pi, and :
 * That's it
   
 # Configuration
-By default, a 2s delay is configured on GPIO3 (physical pin 5). GPIO3 is recommanded because it allows to wake the Pi with the same button. Both delay and pin can be changed in safe_shutdown.sh.
+By default, a 2s delay is configured on GPIO3 (physical pin 5). GPIO3 is recommanded because it allows to wake the Pi with the same button. Both delay and pin can be changed in safe_shutdown.sh (be sure to run install.sh after any modification to install the new script)
 
 # Advantages
 * Allows for a delay to avoid unwanted shutdowns
