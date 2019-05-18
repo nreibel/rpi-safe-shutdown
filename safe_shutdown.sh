@@ -17,7 +17,9 @@ fi
 
 if ! gpio_wait $PIN $DELAY; then
   echo "Failed to poll pin $PIN"
+  exit 1
 fi
 
 echo 'Shutdown'
 shutdown -h now
+exit 0
