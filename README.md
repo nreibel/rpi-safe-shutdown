@@ -3,7 +3,7 @@ Safe shutdown/wakeup of Raspberry Pi with a configurable delay (hold button for 
 
 # Installation
 Checkout the repository in a folder of your Pi, and :
-* cd <your checkout directory>
+* cd "your checkout directory"
 * chmod +x install.sh
 * sudo ./install.sh
 * That's it
