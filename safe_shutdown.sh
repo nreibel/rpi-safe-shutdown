@@ -8,11 +8,11 @@ if [ ! -d /sys/class/gpio/gpio$PIN ]; then
 fi
 
 if ! grep -q in /sys/class/gpio/gpio$PIN/direction; then
- echo 'in' >> '/sys/class/gpio/gpio3/direction'
+ echo 'in' >> "/sys/class/gpio/gpio$PIN/direction"
 fi
 
 if ! grep -q both /sys/class/gpio/gpio$PIN/edge; then
-  echo 'both' >> '/sys/class/gpio/gpio3/edge'
+  echo 'both' >> "/sys/class/gpio/gpio$PIN/edge"
 fi
 
 if ! gpio_wait $PIN $DELAY; then
